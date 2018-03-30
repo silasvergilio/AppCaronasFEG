@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+         <!-- Adiciona os ícones google-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta charset="UTF-8">
+            <!-- Compiled CSS -->
+      <link rel="stylesheet" href="./materialize/css/materialize.css">
+    
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <!-- Compiled  JavaScript -->
+      <script src="./materialize/js/materialize.js"></script>
+      <link rel="stylesheet" href = "./css/mystyle.css">
+
+    </head>
+<body>
+
+    <!-- NavBar superior com o menu e título do App-->
+ 
+    <nav class = "red darken-1">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><i class="material-icons">local_taxi</i></a>
+                 <a href="#" data-activates="menu-mobile" class="button-collapse">
+                     <i class="material-icons">menu</i>
+                </a>
+             <ul class="right hide-on-med-and-down">
+                     <li><a href="#">Angular</a></li>
+                     <li><a href="#">Ionic</a></li>
+                     <li><a href="#">TypeScript</a></li>
+                     <li><a href="#">Cordova</a></li>
+                 </ul>
+               
+                 <ul class="side-nav" id="menu-mobile">
+                     <li><a href="#">Angular</a></li>
+                     <li><a href="#">Ionic</a></li>
+                     <li><a href="#">TypeScript</a></li>
+                     <li><a href="#">Cordova</a></li>
+                </ul>
+            </div>
+         </nav>
+        
+
+
+    <div class="row">
+        <div class="col s12 m6">
+          <div class="card red darken-4">
+            <div class="card-content white-text">
+              <span class="card-title">São Paulo</span>
+              <div class="chip">
+                <img src="img/fotoperfil.jpg" alt="Contact Person">
+                Silas Vergilio &#x2605 &#x2605 &#x2605 &#x2605 &#x2605 
+              </div>
+              <p><img src="img/money-bag.png"> R$ 25</p>
+              <p><img src="img/car-compact.png"> Celta </p>
+              <p><img src="img/calendar.png"> 23/03/18 - 18h00 </p>
+            </div>
+            <div class="card-action red darken-2">
+                <button class="white black-text center btn waves-effect waves-red" type="submit" name="action">
+                    Solicitar Carona
+                <i class="material-icons right">thumb_up</i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+      
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+
+     <script>
+             $(function(){
+                 $(".button-collapse").sideNav();
+             });
+             </script>
+</body>
+</html>

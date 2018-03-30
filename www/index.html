@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+         <!-- Adiciona os ícones google-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta charset="UTF-8">
+
+            <!--Adiciona o CSS do Materialize-->
+      <link rel="stylesheet" href="./materialize/css/materialize.css">
+    
+
+       <!-- Adiciona o JQuery necessário apra aplicar as funcionalidades do Materialize-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <!-- Adiciona o JavaScript do Materialize-->
+      <script src="./materialize/js/materialize.js"></script>
+      <!--Adiciona o CSS do projeto-->
+      <link rel="stylesheet" href = "./css/mystyle.css">
+
+        <title>NepApp</title>
+    </head>
+    <body>
+
+
+        <!--Linha superior com o logo do App -->
+            <div class="row">
+                    <div class="col s4"></div>
+                            
+                    <div class="col s4">
+                            <img class="responsive-img center" width = "200px" src="nepep-logo.png">
+                    </div>
+
+                    <div class="col s4"></div>
+                  </div>
+         
+
+    <!-- Linha Central com o nome de usuário para o App-->
+            <div class="row">
+                    <div class="col s4"></div>
+
+                    <div class="col s4">
+                      <input value="" id="first_name2" type="text" class="validate ">
+                      <label class="active" for="first_name2">Usuário</label>
+                    </div>
+
+                    <div class="col s4"></div>
+                  </div>
+
+
+                  <!-- Linha com o o campo de senha do usuário
+                    TODO Adicionar uma opção de entrar pelo facebook-->
+                  <div class="row">
+                        <div class="col s4"></div>
+    
+                        <div class="input-field col s4">
+                          <input value="" id="first_name2" type="text" class="validate">
+                          <label class="active" for="first_name2">Senha</label>
+                        </div>
+    
+                        <div class="col s4"></div>
+                      </div>
+
+<!-- Campo de botão para entrar no app-->
+                      <div class="row">
+                            <div class="col s4"></div>
+                                                
+                            <div class="input-field col s4">
+                                <!-- O evento onClick do botão apenas redireciona para a outra página do App-->
+                                    <button onclick= window.location="mainPage.html"; class=" red darken-4 center btn waves-effect waves-light" type="submit" name="action">Entrar
+                                            <i class="material-icons right">send</i>
+                                          </button>
+                            </div>
+
+                            <div class="col s4"></div>
+                          </div>
+               
+<!-- Adiciona o JavaScript padrão do Cordova e do programador-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
